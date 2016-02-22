@@ -1,0 +1,46 @@
+body {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+}
+
+header {
+  font-family: 'Fjalla One', sans-serif;
+  color: red;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hovor:not(.active) {
+  background-color: black;
+}
+
+.nav .active {
+  background-color: red;
+}
