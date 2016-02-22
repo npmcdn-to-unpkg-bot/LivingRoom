@@ -1,56 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type="text/css" rel="stylesheet" href="index.css"/>
-  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="index.css"/>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <div class="row">
-    <div class="nav">
-        <ul>
-          <li><a href="#info">INFO</a></li>
-          <li><a href="#menu">MENU</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#hookah">HOOKAH</a></li>
-          <li><a href="#events">EVENTS/SPECIALS</a></li>
-          <li><a href="#catering">CATERING</a></li>
-          <li><a href="#about">ABOUT</a></li>
-        </ul>
+<div class="container">
+    <div class = "row">
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a style="font-family:Fjalla One" href="#info">INFO</a></li>
+            <li><a style="font-family:Fjalla One" href="#menu">MENU</a></li>
+            <li><a style="font-family:Fjalla One" href="#gallery">GALLERY</a></li>
+            <li><a style="font-family:Fjalla One" href="#hookah">HOOKAH</a></li>
+            <li><a style="font-family:Fjalla One" href="#events">EVENTS/SPECIALS</a></li>
+            <li><a style="font-family:Fjalla One" href="#catering">CATERING</a></li>
+            <li><a style="font-family:Fjalla One" href="#about">ABOUT</a></li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+    </div>
+</div>
+
+<!-- info -->
+<article id="info">
+<!-- end info -->
+
+<!-- menu -->
+<article id="menu">
+  <div class="container">
+    <h2 style="font-family:Fjalla One">Food & Drink</h2>
+    <ul class="nav nav-tabs nav-justified">
+      <li class="active"><a style="font-family: Fjalla One" data-toggle="tab" href="#drinks">DRINKS</a></li>
+      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#breakfast">BREAKFAST</a></li>
+      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#entrees">ENTREES</a></li>
+      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#ss">SOUPS + SALADS</a></li>
+      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#alcohol">ALCOHOL</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div id="drinks" class="tab-pane fade in active">
+        <br>
+        <br>
+        <p style="font-family: Roboto Condensed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div id="breakfast" class="tab-pane fade">
+        <br>
+        <br>
+        <p style="font-family: Roboto Condensed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div id="entrees" class="tab-pane fade">
+        <br>
+        <br>
+        <p style="font-family: Roboto Condensed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div id="ss" class="tab-pane fade">
+        <br>
+        <br>
+        <p style="font-family: Roboto Condensed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
+      <div id="alcohol" class="tab-pane fade">
+        <br>
+        <br>
+        <p style="font-family: Roboto Condensed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+
     </div>
   </div>
+<!-- end menu -->
 
-  <!-- info -->
-  <article id="info">
-  <!-- end info -->
+<!-- gallery -->
+<article id="gallery">
+<!-- end gallery -->
 
+<!-- hookah -->
+<article id="hookah">
 
-  <!-- menu -->
-  <article id="menu">
-  <!-- end menu -->
+<!-- end hookah -->
 
-  <!-- gallery -->
-  <article id="gallery">
-  <!-- end gallery -->
+<!-- events/specials -->
+<article id="events">
+<!-- end events/specials -->
 
-  <!-- hookah -->
-  <article id="hookah">
+<!-- catering -->
+<article id="catering">
+<!-- end catering -->
 
-  <!-- end hookah -->
-
-  <!-- events/specials -->
-  <article id="events">
-  <!-- end events/specials -->
-
-  <!-- catering -->
-  <article id="catering">
-  <!-- end catering -->
-
-  <!-- about -->
-  <article id="about">
-  <!-- end about -->
+<!-- about -->
+<article id="about">
+<!-- end about -->
 </body>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </html>
