@@ -1,0 +1,96 @@
+body {
+  background-color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 1em;
+}
+
+h2 {
+  font-family: 'Fjalla One', sans-serif;
+  color: red;
+}
+
+.container {
+  margin: 60px;
+  float: center;
+}
+
+
+
+.navbar-header{
+  outline:none;
+  background:white;
+  border-color:white;
+}
+.container-fluid{
+  background:white;
+  outline-width:0px;
+  border-color:white;
+}
+
+.nabar-toggle:focus{
+  display:none;
+}
+.titleimg {
+
+  width:100%;
+  height:50%;
+  margin:0;
+}
+#rectangle {
+      float:center;
+    width: 260px;
+    height: 5px;
+    background: red;
+     margin-left:auto;
+  margin-right:auto;
+
+  }
+  #rectanglee {
+    width:360px;
+    height:100px;
+    background:red;
+  }
+.socialimg {
+  width:10%;
+  height:10%;
+  margin:0;
+}
+.logoimg{
+  float:left;
+  width:16%;
+  height:16%;
+}
+.socialimg:hover{
+outline:none;
+text-decoration: none;
+background
+}
+.socialimgg {
+  width:7%;
+  height:7%;
+  margin:0;
+}
+.alignleft {
+  float: left;
+      padding-left:40px;
+}
+.alignright {
+  float: right;
+  padding-right:40px;
+}
+
+p {
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+}
+.cateringbutt{
+  background-color:red;
+  border-radius: 2px;
+  font-family: 'Roboto Condensed', sans-serif;
+  color:white;
+  border:solid;
+  width:200px;
+}
