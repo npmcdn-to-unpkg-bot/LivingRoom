@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
   text-align: center;
-  font-size: 1em;
+  font-size: 6em;
 }
 
 h2 {
@@ -29,8 +29,8 @@ h2 {
   border-color:white;
 }
 
-.nabar-toggle:focus{
-  display:none;
+.nav .navbar-toggle:hover{
+background-color:white;
 }
 .titleimg {
 
@@ -74,17 +74,30 @@ background
 }
 .alignleft {
   float: left;
-      padding-left:40px;
+      padding-left:20px;
+      font-size:1.2em;
 }
 .alignright {
   float: right;
-  padding-right:40px;
+  padding-right:20px;
+  font-size:1.2em;
+}
+.alignleftt {
+  float: left;
+      padding-left:0px;
+      font-size:1.2em;
+}
+.alignrightt {
+  float: right;
+  padding-right:0px;
+  font-size:1.2em;
 }
 
 p {
     font-weight: bold;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: left;
+    font-size:1.2em;
 }
 .cateringbutt{
   background-color:red;
@@ -94,3 +107,30 @@ p {
   border:solid;
   width:200px;
 }
+li {
+  font-color: red;
+}
+
+
+.containerr{
+  margin-left:auto;
+}
+/*
+MEDIA QUERIES*/
+@media screen and (min-width: 1001px) {
+    ul li a:after {
+        content: " (" attr(data-email) ")";
+        font-size: 12px;
+        font-style: italic;
+        color: #666666;
+    }
+}
+
+
+
+
+
+
+
+
+

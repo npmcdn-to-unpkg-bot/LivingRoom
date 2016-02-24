@@ -3,6 +3,7 @@
 <html>
 <head>
 <link type="text/css" rel="stylesheet" href="cssliving.css"/>
+
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
@@ -11,7 +12,45 @@
 
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="livingjs.js"></script>
+
+<link rel="stylesheet" href="ddscrollspydemo.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<script src="ddscrollspy.js">
+
+/*
+* DD ScrollSpy Menu Script (c) Dynamic Drive (www.dynamicdrive.com)
+* Last updated: Aug 1st, 14'
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+*/
+
+</script>
+
+<script>
+
+jQuery(function($){ // on document load
+  $('#horizontalmenu').ddscrollSpy({ // initialize first demo
+    scrolltopoffset: -50
+  })
+
+  $('#verticalspymenu').ddscrollSpy({ // initialize 2nd demo
+    spytarget: document.getElementById('contentcontainer'),
+    enableprogress: 'progress',
+    scrollduration: 300 // <-- no comma after last option!
+  })
+})
+
+function dynamicadditem(){ // function that dynamically adds a new menu item to first demo, spying on #para6
+  $('#verticalspymenu').append('<li><a href="#para5">Paragraph 5</a></li>')
+  $('#verticalspymenu').trigger('updatespy')
+}
+
+</script>
 </head>
+
 
 <body>
 
@@ -85,80 +124,298 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- menu -->
+<!-- menu1 -->
 <article id="menu">
   <div class="container">
-    <h2 style="font-family:Fjalla One">FOOD & DRINK<div id="rectangle"> </h2>
-    <ul class="nav nav-tabs nav-justified">
-      <li class="active"><a style="font-family: Fjalla One" data-toggle="tab" href="#drinks">DRINKS</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#breakfast">BREAKFAST</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#entrees">ENTREES</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#ss">SOUPS + SALADS</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#alcohol">ALCOHOL</a></li>
-    </ul>
+    <h2 style="font-family:Fjalla One">DRINK<div id="rectangle"> </h2>
 
-    <div class="tab-content">
 
-      <div id="drinks" class="tab-pane fade in active">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
+    <ul class="nav nav-tabs">
+  <li class="active">
+    <a data-toggle="tab" style="font-family:Fjalla One" href="#coffee">COFFEE</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#iced">ICED</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#tea">TEA</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#mocha">MOCHA</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#frappe">FRAPPE</a></li>
+</ul>
 
-      <div id="breakfast" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
+<div class="tab-content">
 
-      <div id="entrees" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
+  <div id="coffee" class="tab-pane fade in active">
+<div id="infotext">
+  <p class="alignleftt">
+    House Brew<br>
+    Espresso<br>
+    Americano<br>
+    Machiato<br>
+    Carmel Latte<br>
+    Cappuccino<br>
+    BreveLatte (Espresso/Half & Half)<br>
+  Cafe Latte <br> 
+  Toffee Nut Latte<br>
+  Cafe Au-Lait<br>
+  Chai Latte<br>
+   Matcha Latte<br>
+   Hot Chocolate<br> 
+   Hot White Chocolate<br>
+   Turkish Coffee
+ </p>
+  <p class="alignrightt"></p>
+</div>
+<div style="clear: both;"></div>
+</div>
 
-      <div id="ss" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
 
-      <div id="alcohol" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
+  <div id="iced" class="tab-pane fade" data-toggle="tab">
+    <div id="infotext">
+  <p class="alignleftt">
+      Italian Sodas<br>
+      Lemonade<br>
+      Lemon Freeze<br>
+      Iced Tea (House, Rasberry, Passion, Green and Blood Orange)<br>
+      Arnold Palmer<br>
+      Freshly Squeezed Orange Juice<br>
+      Caramel Coffee<br>
+      Vietnamese <br>
+      Chai Latte <br>
+      Vanilla Chai Latte
+  </p>
+ <p class="alignrightt"></p>
+</div>
+<div style="clear: both;"></div>
+</div>
 
-    </div>
+
+  <div id="tea" class="tab-pane fade" data-toggle="tab">
+    <div id="infotext">
+  <p>Hot Tea <br>
+Tea Pot for Two <br>
+Tea Au Lait (Tea with Steamed Milk)<br>
+Vanilla Chai Tea Au Lait<br>
+London Fog (Vanilla, Earl Grey, Steamed Milk) <br><br></p>
+  <p class="alignleftt">
+
+CAFFEINATED<br>
+Apricot<br> 
+Black Currant <br>
+Ceylon<br>
+Chai <br>
+China Jasmine <br>
+China White <br>
+Darjeeling <br>
+Earl Grey <br>
+English Breakfast <br>
+Green<br>
+Rasberry<br>
+Vanilla <br> <br><br>
+
+  </p>
+ <p class="alignrightt">DECAFFEINATED <br>Berry Patch<br>
+Blood Orange<br>
+Chamomile<br>
+Earl Grey<br>
+English Breakfast<br>
+New Zealand Sunny Slope <br>
+Lemon Zinger <br>
+Peppermint<br>
+Rooibos<br>
+Rosebud</p>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+    <div id="mocha" class="tab-pane fade" data-toggle="tab">
+    <div id="infotext">
+  <p class="alignleftt">
+
+Cafe Mocha<br>
+California Mocha (Apricot)<br>
+Mint Mocha <br>
+Peppermint Mocha<br>
+Hazelnut Mocha<br>
+Cafe Suizzerra (Rasberry Mocha)<br>
+Cafe Jaffa (Orange Mocha)<br>
+Milky Way Mocha (Carmel Mocha)<br>
+Cafe Blondie (White Chocolate Mocha)
+ <p class="alignrightt">
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+  <div id="frappe" class="tab-pane fade" data-toggle="tab">
+    <div id="infotext">
+  <p class="alignleftt">
+Latte Frappe Freeze <br>
+Mocha Frappe Freeze <br>
+Strawberry Mocha Freeze <br>
+Banana Mocha Freeze<br>
+Carmel Frappe Freeze<br>
+Toffee Coffee Freeze <br>
+Cookie Catastrophe (Oreo Frappe)<br>
+<br>
+Avalanche Freeze (White Chocolate with Espresso Chocolate covered beans)<br>
+Bomb Alaska Freeze (White Chocolate with a shot of chilled Espresso)<br>
+Banana Cappuccino (White Chocolate, Milk, Fresh Espresso, Fresh Banana)<br>
+White Orange Freeze (White Chocolate with Freshly squeezed Orange Juice)<br>
+White Banana Orange Freeze (White Chocolate with OJ and Banana)
+<br><br>
+Vanilla Chai Freeze<br>
+Tahitian Vanilla Freeze<br>
+Tai Tea Freeze<br>
+Matcha Green Tea Freeze<br>
+Hawaiian Breeze Freeze (Lemonade/Strawberry)<br>
+Smoothies (Acai, Banana, Strawberry, Mango and Berry)
+  </p>
+ <p class="alignrightt"></p>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+
+
+
+
+<!-- end menu1 -->
+<!-- menu2 -->
+<article id="menuu">
+  <div class="container">
+    <h2 style="font-family:Fjalla One">EAT<div id="rectangle"> </h2>
+
+
+    <ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" style="font-family:Fjalla One" href="#bfast">BFAST</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#starters">STARTERS</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#entrees">ENTREES</a></li>
+  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#salads">SALADS</a></li>
+</ul>
+
+<div class="tab-content">
+
+
+  <div id="bfast" class="tab-pane fade in active">
+    <h3> Our Breads are Baked Fresh Daily </h3>
+  <div id="infotext">
+  <p class="alignleftt">
+      Plain Croissant <br>
+      Nutella Croissant<br>
+      Almond Croissant<br>
+      Cheese Croissant <br>
+      Ham & Cheese Croissant<br><br>
+      Bagel with Butter or Cream Cheese<br>
+      Bagel Tapenade <i>(Cream Cheese, Tapenade, Tomatoes)</i><br>
+      Bagel Pesto <i>(Basil Pesto, Cream Cheese, Tomatoes)</i><br><br>
+      Three Slices of Multi-Grain Bread/Sourdough, Toasted <i>(Butter and Jam)</i><br><br></p>
+
+      <h3> Entrees Served with Fresh Seasonal Fruits</h3>
+      <p class="alignleftt">
+      <b>Quiche Lorraine </b><i>(Homemade, Bestseller)</i><br>
+      Spinach Quiche <i>(Homemade, Living Room Original)</i><br>
+      <br>
+      Breakfast Croissant <i>(Eggs, Ham & Cheese)</i><br>
+      Club Croissant <i>(Eggs, Turkey, Bacon & Cheese)</i><br>
+      La Jolla Croissant <i>(Scrambled Eggs, Ham & Cheese with Avocado)</i><br>
+      Spinach and Cheese Stuffed Croissant <br>
+      Turkey and Cheese Stuffed Croissant <br>
+      <br>
+      Sunrise Bagel <i> (Eggs, Ham or Bacon & Cheese)</i><br>
+      Veggie Bagel <i>(Cream Cheese, Tomatoes, Onions & Capers)</i><br>
+      Ultimate Bagel <i>(Scrambled Eggs, Spinach & Feta with Tomatoes)</i><br>
+      <br>
+      Smoked Salmon & Bagel Plate <i>(Cream Cheese, Lettuce, Tomatoes, Onions Cucumbers & Capers)</i><br>
+      <br>
+      Breakfast Burrito <i>(Eggs, Ham, Cheese, Avocado and Salso, in a Tomato Basil Tortilla)</i><br><br>
+
+      Egg Sandwich Make Your Own <i>(Two Scambled Eggs with your choice of: Croissant, Bagel, Multi-Grain or Sourdough Bread, with Fresh Seasonal Fruits)</i><br>
+      <i>Add Turkey, Ham, Bacon, Cheese, Tomatoes, Spinach, Pesto, Tapenade, Feta Cheese, Salsa, Avocado</i><br><br>
+
+      Waffles Served with Fresh Fruits and Whipped Cream <i>(add Bacon)</i><br>
+      Bowl of Fresh Fruit <i>(Small or Large)</i><br>
+      Yogurt Parfait<br>
+      Granola<br>
+      Fruit & Brie<br>
+      Fresh Muffins, Scones, Danishes & Coffee Cakes
+
+
+
+  </p>
+ <p class="alignrightt"></p>
+</div>
+<div style="clear: both;"></div>
   </div>
-<!-- end menu -->
+
+
+
+
+  <div id="starters" class="tab-pane fade" data-toggle="tab">
+
+    <div id="infotext">
+      <h3> APPETIZERS</H3>
+  <p class="alignleftt">
+   <b> Hummus </b> <i>(Homemade served with Toasted Pita Bread)</i><br><br>
+   Baba Ghanooj <i>(Eggplant, Garlic Tahini Sauce with EVOO dip, with Pita Bread)</i> <br><br>
+   Lebnah<i>(Lebanese Yogurt Dip with EVOO and Pita Bread)</i><br><br>
+   Dolma <i>(Grape Leaves Stuffed with Rice, Vegetables and Spices)</i><br><br>
+   Combo Platter <i>(A Choice of any of the Three Above)</i><br><br>
+   Tabouli <i>(Parsley with Bulgur Salad filled with tomatoes, green onions, fresh mint and lemon juice)</i><br><br>
+   Falafel <i>(4 Fried balls of Chickpeas, Parsley and Spices, served with Pita Bread & Tahini Sauce)</i><br><br>
+   Lebnah & Zaatar with Olive Oil Pizza<br><br>
+   Hummus with Beef Shawarma<br><br>
+   Hot Wings <i> (Served with Celery and Ranch)</i><br>
+   Chicken Strips <i>(with Ranch Dip)</i><br><br>
+   Shawarma Beef Nachos (Tortilla or Fries)<i>(Topped with Beef Shawarma, Mexican Cheese, Olives, Jalepenos and Salsa...add Avocado and Lebnah)</i><br><br>
+   French Fries <br><br>
+   Chips & Salsa <br></p>
+   <h3> Award Winning Homemade Soups, made fresh daily)<br></h3>
+   <i> (Served with Multigrain Bread and Butter or Salad, Butter and Fresh Seasonal Fruits)</i>
+   <br>
+   <h3> WINE PLATTERS</h3>
+   <p class="alignleftt">
+   Brie and Fruit Plate <i>(Imported Brie Cheese Served with Seasonal Fruits)</i><br><br>
+   Olive Tapenade <i> (Homemade with PEsto on Multi-Grain Bread, Toasted)</i><br><br>
+   Cheese Platter <i> (Imported Brie, Cheddar, Swiss and Provolone, Salami, Mortadella & Capicolla, Kalamata Olives and our homemade Olives Tapenade served with Crackers)</i><br><br>
+   Napa Platter <i>(Imported Brie, Cheddar, Swiss, Provolone, Salami, Mortadella & Capicola, Kalamata Olives and our homemade Olives Tapenade served with Crackers)</i> <br><br>
+
+   <h3> GORUMET PERSONAL PIZZAS </h3>
+   <p class="alignleftt">
+    Hummus Pizza <i> (A Living Room Original, with Hummus, Pesto, Artichoke Hearts and Onions with Feta and Fresh Mozzarella)</i><br><br>
+    Pesto Chicken Pizza <i>(Chicken Breast, Homemade Pesto, Onions and Fresh Mozzarella)</i><br><br>
+    Pepperoni Pizza<br><br>
+    Cheese Pizza 
+
+
+
+  </p>
+ <p class="alignrightt"></p>
+</div>
+<div style="clear: both;"></div>
+
+</div>
+
+
+  <div id="entrees" class="tab-pane fade" data-toggle="tab">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+    <div id="salads" class="tab-pane fade" data-toggle="tab">
+    <h3>Menu 2</h3>
+    <p>Some content in menu 2.</p>
+  </div>
+</div>
+
+<!-- end menu1 -->
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- gallery -->
 <article id="gallery">
@@ -176,61 +433,16 @@
 <article id="events">
    <h2 style="font-family:Fjalla One">EVENTS<div id="rectangle"> </h2>
    <h4> HAPPY HOURS <BR>4PM-7PM<BR> EVERYDAY
-  <div class="container">
-    <ul class="nav nav-tabs nav-justified">
-      <li class="active"><a style="font-family: Fjalla One" data-toggle="tab" href="#drinks">SATURDAY</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#breakfast">SUNDAY</a></li>
-      <li class="active"><a style="font-family: Fjalla One" data-toggle="tab" href="#drinks">MONDAY</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#breakfast">TUESDAY</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#entrees">WEDNESDAY</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#ss">THURSDAY</a></li>
-      <li><a style="font-family: Fjalla One" data-toggle="tab" href="#alcohol">FRIDAY</a></li>
-    </ul>
+ 
 
-    <div class="tab-content">
 
-      <div id="drinks" class="tab-pane fade in active">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
 
-      <div id="breakfast" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
 
-      <div id="entrees" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
 
-      <div id="ss" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
 
-      <div id="alcohol" class="tab-pane fade">
-        <br>
-        <br>
-        <p style="font-family: Roboto Condensed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-      </div>
 
-    </div>
-  </div>
+
+
 <!-- end menu -->
 <!-- end events/specials -->
 
