@@ -10,18 +10,33 @@ h2 {
   font-family: 'Fjalla One', sans-serif;
   color: red;
 }
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+
+.nav-tabs {
+    text-align:center;
+}
+
 
 .container {
   margin: 60px;
   float: center;
 }
-
-
+.navbar-toggle{
+  border-radius:none;
+  border:none;
+}
+.navbar-inverse .navbar-toggle{
+border-color:white;
+}
 
 .navbar-header{
   outline:none;
   background:white;
   border-color:white;
+
 }
 .container-fluid{
   background:white;
@@ -29,7 +44,7 @@ h2 {
   border-color:white;
 }
 
-.nav .navbar-toggle:hover{
+.myNavbar{
 background-color:white;
 }
 .titleimg {
@@ -59,8 +74,8 @@ background-color:white;
 }
 .logoimg{
   float:left;
-  width:16%;
-  height:16%;
+  width:12%;
+  height:12%;
 }
 .socialimg:hover{
 outline:none;
@@ -72,6 +87,8 @@ background
   height:7%;
   margin:0;
 }
+
+
 .alignleft {
   float: left;
       padding-left:20px;
@@ -84,15 +101,77 @@ background
 }
 .alignleftt {
   float: left;
-      padding-left:0px;
+      padding-left:50px;
       font-size:1.2em;
 }
 .alignrightt {
   float: right;
-  padding-right:0px;
+  padding-right:50px;
+  font-size:1.2em;
+}
+.alignrightttt {
+  float: right;
+  padding-right:20px;
   font-size:1.2em;
 }
 
+.alignrighttt {
+  float: right;
+  padding-right:100px;
+  font-size:1.2em;
+}
+.aligncenter {
+  text-align:center;
+}
+
+.alignleftbfast {
+   float: left;
+      padding-left:50px;
+      font-size:1.2em;
+}
+.alignrightbfast{
+    float: right;
+  padding-right:50px;
+  font-size:1.2em;
+}
+.alignrightbfastt{
+    float: right;
+  padding-right:20px;
+  font-size:1.2em;
+}
+h2 {
+  font-family:Fjalla One
+}
+
+
+.footerimg {
+    width: 100%;
+    height: 90px;
+    background-image: url("coffee1.jpg");
+    background-size: 100% 100%;
+}​
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+
+
+
+h3 {
+  text-align:center;
+}
+
+.upicon
+{
+  width:30px;
+  height:30px;
+}
 p {
     font-weight: bold;
     font-family: 'Roboto Condensed', sans-serif;
@@ -111,19 +190,53 @@ li {
   font-color: red;
 }
 
-
+.center{
+  text-align: center;
+}
 .containerr{
   margin-left:auto;
 }
-/*
-MEDIA QUERIES*/
-@media screen and (min-width: 1001px) {
-    ul li a:after {
-        content: " (" attr(data-email) ")";
-        font-size: 12px;
-        font-style: italic;
-        color: #666666;
-    }
+.nav-tabs.centered > li, .nav-pills.centered > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs.centered, .nav-pills.centered {
+    text-align:center;
+}
+
+/*MEDIA QUERIES AND MASONRY STUFF*/
+
+/* BETTER SAID.box-item {
+    width: 75.5px;
+    height: 75.5px;
+    float: left;
+    background-color: grey;
+    margin: 2.5px;
+
+}*/
+
+.box-item {
+    width: 75.5px;
+    height: 75.5px;
+    float: left;
+    margin: 2.5px;
+
+}
+
+.bigger {
+    height: 75.5px;
+    width:155px;
+}
+
+.smaller {
+    height: 155px;
+    width: 155px;
+}
+#containerrr {
+    height:250px;
 }
 
 
@@ -134,3 +247,21 @@ MEDIA QUERIES*/
 
 
 
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .bigger {
+    height: 75.5px;
+    width:155px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .bigger {
+    height: 75.5px;
+    width:155px;
+    }
+}

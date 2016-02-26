@@ -11,44 +11,32 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.freetile.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
 <script type="text/javascript" src="livingjs.js"></script>
 
-<link rel="stylesheet" href="ddscrollspydemo.css" />
+<link rel="stylesheet" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 
-<script src="ddscrollspy.js">
-
-/*
-* DD ScrollSpy Menu Script (c) Dynamic Drive (www.dynamicdrive.com)
-* Last updated: Aug 1st, 14'
-* Visit http://www.dynamicdrive.com/ for this script and 100s more.
-*/
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous">
 
 </script>
 
-<script>
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
 
-jQuery(function($){ // on document load
-  $('#horizontalmenu').ddscrollSpy({ // initialize first demo
-    scrolltopoffset: -50
-  })
+<script src="ddscrollspy.js"></script>
 
-  $('#verticalspymenu').ddscrollSpy({ // initialize 2nd demo
-    spytarget: document.getElementById('contentcontainer'),
-    enableprogress: 'progress',
-    scrollduration: 300 // <-- no comma after last option!
-  })
-})
-
-function dynamicadditem(){ // function that dynamically adds a new menu item to first demo, spying on #para6
-  $('#verticalspymenu').append('<li><a href="#para5">Paragraph 5</a></li>')
-  $('#verticalspymenu').trigger('updatespy')
-}
-
-</script>
+<script src="/path/to/masonry.pkgd.min.js"></script>
+  <script src="js/masonry.js"></script>
 </head>
 
 
@@ -62,7 +50,7 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
 
     <!-- info -->
 <article id="info">
-<h2 style ="font-family:Fjalla One"> INFO  <div id="rectangle"> </h2>
+<h2 style ="font-family:Fjalla One"> INFO  <div id="rectangle"> </div></h2>
 
 
 
@@ -86,6 +74,7 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
   <p class="alignright">1010 Prosepct St. <br> La Jolla,CA <br> (858)459-1187</p>
 </div>
 <div style="clear: both;"></div>
+</article>
 <!-- hi jamie!!-->
 <!-- end info -->
 
@@ -125,23 +114,23 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
 
 
 <!-- menu1 -->
+      <h2 style="font-family:Fjalla One">DRINK<div id="rectangle"> </div></h2>
 <article id="menu">
+
   <div class="container">
-    <h2 style="font-family:Fjalla One">DRINK<div id="rectangle"> </h2>
-
-
-    <ul class="nav nav-tabs">
-  <li class="active">
-    <a data-toggle="tab" style="font-family:Fjalla One" href="#coffee">COFFEE</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#iced">ICED</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#tea">TEA</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#mocha">MOCHA</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#frappe">FRAPPE</a></li>
+    <ul class="nav nav-tabs centered" href="#menu">
+ <!--  <li class="active"> -->
+    <li><a data-toggle="tab" href="#coffee">COFFEE</a></li>
+  <li><a data-toggle="tab" href="#iced">ICED</a></li>
+  <li><a data-toggle="tab" href="#tea">TEA</a></li>
+  <li><a data-toggle="tab" href="#mocha">MOCHA</a></li>
+  <li><a data-toggle="tab" href="#frappe">FRAPPE</a></li>
 </ul>
+</div>
 
 <div class="tab-content">
 
-  <div id="coffee" class="tab-pane fade in active">
+<div id="coffee" class="tab-pane fade">
 <div id="infotext">
   <p class="alignleftt">
     House Brew<br>
@@ -151,6 +140,8 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
     Carmel Latte<br>
     Cappuccino<br>
     BreveLatte (Espresso/Half & Half)<br>
+     </p>
+  <p class="alignrightt">
   Cafe Latte <br> 
   Toffee Nut Latte<br>
   Cafe Au-Lait<br>
@@ -160,7 +151,10 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
    Hot White Chocolate<br>
    Turkish Coffee
  </p>
-  <p class="alignrightt"></p>
+<!-- <br><br><br><br><br><button type="button" class="btn btn-link" data-toggle="collapse" data-target="#coffee"> -->
+<!--   <img src="up.jpg" class="upicon"> -->
+
+
 </div>
 <div style="clear: both;"></div>
 </div>
@@ -172,15 +166,22 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
       Italian Sodas<br>
       Lemonade<br>
       Lemon Freeze<br>
-      Iced Tea (House, Rasberry, Passion, Green and Blood Orange)<br>
+      Iced Green Tea<br>
+      Iced House Tea <br>
+      Iced Rasberry Tea<br>
+      Iced Passion Tea <br>
+       </p>
+
+       <p class="alignrightt">
+      Iced Blood Orange Tea <br>
       Arnold Palmer<br>
       Freshly Squeezed Orange Juice<br>
       Caramel Coffee<br>
       Vietnamese <br>
       Chai Latte <br>
       Vanilla Chai Latte
-  </p>
- <p class="alignrightt"></p>
+ 
+ </p>
 </div>
 <div style="clear: both;"></div>
 </div>
@@ -188,14 +189,15 @@ function dynamicadditem(){ // function that dynamically adds a new menu item to 
 
   <div id="tea" class="tab-pane fade" data-toggle="tab">
     <div id="infotext">
-  <p>Hot Tea <br>
-Tea Pot for Two <br>
-Tea Au Lait (Tea with Steamed Milk)<br>
-Vanilla Chai Tea Au Lait<br>
-London Fog (Vanilla, Earl Grey, Steamed Milk) <br><br></p>
+  <p class="aligncenter">
+<i>Tea Pot for Two Available</i>
+<br></p>
   <p class="alignleftt">
 
 CAFFEINATED<br>
+London Fog <br>
+Tea Au Lait<br>
+Vanilla Chai<br>
 Apricot<br> 
 Black Currant <br>
 Ceylon<br>
@@ -227,7 +229,7 @@ Rosebud</p>
 
     <div id="mocha" class="tab-pane fade" data-toggle="tab">
     <div id="infotext">
-  <p class="alignleftt">
+  <p class="center">
 
 Cafe Mocha<br>
 California Mocha (Apricot)<br>
@@ -253,26 +255,29 @@ Strawberry Mocha Freeze <br>
 Banana Mocha Freeze<br>
 Carmel Frappe Freeze<br>
 Toffee Coffee Freeze <br>
-Cookie Catastrophe (Oreo Frappe)<br>
+Cookie Catastrophe<br>
+Avalanche Freeze <br>
+Bomb Alaska Freeze <br>
+</p>
+
+<p class="alignrightttt">
+Banana Cappuccino <br>
+White Orange Freeze <br>
+White Banana Orange Freeze
 <br>
-Avalanche Freeze (White Chocolate with Espresso Chocolate covered beans)<br>
-Bomb Alaska Freeze (White Chocolate with a shot of chilled Espresso)<br>
-Banana Cappuccino (White Chocolate, Milk, Fresh Espresso, Fresh Banana)<br>
-White Orange Freeze (White Chocolate with Freshly squeezed Orange Juice)<br>
-White Banana Orange Freeze (White Chocolate with OJ and Banana)
-<br><br>
 Vanilla Chai Freeze<br>
 Tahitian Vanilla Freeze<br>
 Tai Tea Freeze<br>
 Matcha Green Tea Freeze<br>
-Hawaiian Breeze Freeze (Lemonade/Strawberry)<br>
-Smoothies (Acai, Banana, Strawberry, Mango and Berry)
+Hawaiian Breeze Freeze <br>
+Smoothies (Acai, Mango, etc.)
   </p>
- <p class="alignrightt"></p>
 </div>
 <div style="clear: both;"></div>
 </div>
 </div>
+</div>
+</article>
 
 
 
@@ -280,67 +285,76 @@ Smoothies (Acai, Banana, Strawberry, Mango and Berry)
 <!-- end menu1 -->
 <!-- menu2 -->
 <article id="menuu">
+   <h2 style="font-family:Fjalla One">EAT<div id="rectangle"> </div></h2>
   <div class="container">
-    <h2 style="font-family:Fjalla One">EAT<div id="rectangle"> </h2>
-
-
-    <ul class="nav nav-tabs">
-  <li class="active"><a data-toggle="tab" style="font-family:Fjalla One" href="#bfast">BFAST</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#starters">STARTERS</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#entrees">ENTREES</a></li>
-  <li><a data-toggle="tab" style="font-family:Fjalla One" href="#salads">SALADS</a></li>
+  <div class="center">
+    <ul class="nav nav-tabs centered">
+  <li><a data-toggle="tab" href="#bfast">BFAST</a></li>
+  <li><a data-toggle="tab" href="#starters">STARTERS</a></li>
+  <li><a data-toggle="tab" href="#entrees">ENTREES</a></li>
+  <li><a data-toggle="tab" href="#salads">SALADS</a></li>
+  <li><a data-toggle="tab" href="#sandwiches">SANDWICHES</a></li>
 </ul>
-
+</div>
 <div class="tab-content">
 
 
-  <div id="bfast" class="tab-pane fade in active">
-    <h3> Our Breads are Baked Fresh Daily </h3>
+  <div id="bfast" class="tab-pane fade">
   <div id="infotext">
-  <p class="alignleftt">
+    <h3> <i> All Breads baked Fresh, Daily </i></h3>
+  <p class="alignleftbfast">
       Plain Croissant <br>
       Nutella Croissant<br>
       Almond Croissant<br>
       Cheese Croissant <br>
-      Ham & Cheese Croissant<br><br>
-      Bagel with Butter or Cream Cheese<br>
-      Bagel Tapenade <i>(Cream Cheese, Tapenade, Tomatoes)</i><br>
-      Bagel Pesto <i>(Basil Pesto, Cream Cheese, Tomatoes)</i><br><br>
-      Three Slices of Multi-Grain Bread/Sourdough, Toasted <i>(Butter and Jam)</i><br><br></p>
-
-      <h3> Entrees Served with Fresh Seasonal Fruits</h3>
-      <p class="alignleftt">
-      <b>Quiche Lorraine </b><i>(Homemade, Bestseller)</i><br>
-      Spinach Quiche <i>(Homemade, Living Room Original)</i><br>
+      Breakfast Croissant<br>
+      Fresh Muffins<br>
+      Scones
       <br>
-      Breakfast Croissant <i>(Eggs, Ham & Cheese)</i><br>
-      Club Croissant <i>(Eggs, Turkey, Bacon & Cheese)</i><br>
-      La Jolla Croissant <i>(Scrambled Eggs, Ham & Cheese with Avocado)</i><br>
-      Spinach and Cheese Stuffed Croissant <br>
-      Turkey and Cheese Stuffed Croissant <br>
-      <br>
-      Sunrise Bagel <i> (Eggs, Ham or Bacon & Cheese)</i><br>
-      Veggie Bagel <i>(Cream Cheese, Tomatoes, Onions & Capers)</i><br>
-      Ultimate Bagel <i>(Scrambled Eggs, Spinach & Feta with Tomatoes)</i><br>
-      <br>
-      Smoked Salmon & Bagel Plate <i>(Cream Cheese, Lettuce, Tomatoes, Onions Cucumbers & Capers)</i><br>
-      <br>
-      Breakfast Burrito <i>(Eggs, Ham, Cheese, Avocado and Salso, in a Tomato Basil Tortilla)</i><br><br>
-
-      Egg Sandwich Make Your Own <i>(Two Scambled Eggs with your choice of: Croissant, Bagel, Multi-Grain or Sourdough Bread, with Fresh Seasonal Fruits)</i><br>
-      <i>Add Turkey, Ham, Bacon, Cheese, Tomatoes, Spinach, Pesto, Tapenade, Feta Cheese, Salsa, Avocado</i><br><br>
-
-      Waffles Served with Fresh Fruits and Whipped Cream <i>(add Bacon)</i><br>
-      Bowl of Fresh Fruit <i>(Small or Large)</i><br>
+    </p>
+    <p class="alignrightbfast">
+      Plain Bagel<br>
+      Bagel Tapenade <br>
+      Bagel Pesto <br>
+      Multi-grain Toast<br>
+      Danishes<br>
+       Coffee Cakes</p>
+<br>
+     <br> 
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br><h3 ><i> Entrees; Served with Fresh Fruit</i></h3>
+      <p class="alignleftbfast">
+      <b>Quiche Lorraine </b><br>
+      Spinach Quiche <br>
+      Breakfast Croissant <br>
+      Club Croissant<br>
+      La Jolla Croissant <br>
+      Custom Egg Sandwich<br>
+      Waffles <br>
+      Breakfast Burrito <br>
+       Smoked Salmon & Bagel
+        </p>
+    <p class="alignrightbfastt">
+      Spinach & Cheese Croissant <br>
+      Turkey & Cheese Croissant <br>
+      Sunrise Bagel<br>
+      Veggie Bagel <br>
+      Ultimate Bagel<br>
+    
+                  Bowl of Fresh Fruit<br>
       Yogurt Parfait<br>
       Granola<br>
-      Fruit & Brie<br>
-      Fresh Muffins, Scones, Danishes & Coffee Cakes
+  
+</p>
+  <p class="aligncenter">
+          <br>
+    </p>
 
 
-
-  </p>
- <p class="alignrightt"></p>
 </div>
 <div style="clear: both;"></div>
   </div>
@@ -351,58 +365,139 @@ Smoothies (Acai, Banana, Strawberry, Mango and Berry)
   <div id="starters" class="tab-pane fade" data-toggle="tab">
 
     <div id="infotext">
-      <h3> APPETIZERS</H3>
-  <p class="alignleftt">
-   <b> Hummus </b> <i>(Homemade served with Toasted Pita Bread)</i><br><br>
-   Baba Ghanooj <i>(Eggplant, Garlic Tahini Sauce with EVOO dip, with Pita Bread)</i> <br><br>
-   Lebnah<i>(Lebanese Yogurt Dip with EVOO and Pita Bread)</i><br><br>
-   Dolma <i>(Grape Leaves Stuffed with Rice, Vegetables and Spices)</i><br><br>
-   Combo Platter <i>(A Choice of any of the Three Above)</i><br><br>
-   Tabouli <i>(Parsley with Bulgur Salad filled with tomatoes, green onions, fresh mint and lemon juice)</i><br><br>
-   Falafel <i>(4 Fried balls of Chickpeas, Parsley and Spices, served with Pita Bread & Tahini Sauce)</i><br><br>
-   Lebnah & Zaatar with Olive Oil Pizza<br><br>
-   Hummus with Beef Shawarma<br><br>
-   Hot Wings <i> (Served with Celery and Ranch)</i><br>
-   Chicken Strips <i>(with Ranch Dip)</i><br><br>
-   Shawarma Beef Nachos (Tortilla or Fries)<i>(Topped with Beef Shawarma, Mexican Cheese, Olives, Jalepenos and Salsa...add Avocado and Lebnah)</i><br><br>
-   French Fries <br><br>
-   Chips & Salsa <br></p>
-   <h3> Award Winning Homemade Soups, made fresh daily)<br></h3>
-   <i> (Served with Multigrain Bread and Butter or Salad, Butter and Fresh Seasonal Fruits)</i>
-   <br>
-   <h3> WINE PLATTERS</h3>
-   <p class="alignleftt">
-   Brie and Fruit Plate <i>(Imported Brie Cheese Served with Seasonal Fruits)</i><br><br>
-   Olive Tapenade <i> (Homemade with PEsto on Multi-Grain Bread, Toasted)</i><br><br>
-   Cheese Platter <i> (Imported Brie, Cheddar, Swiss and Provolone, Salami, Mortadella & Capicolla, Kalamata Olives and our homemade Olives Tapenade served with Crackers)</i><br><br>
-   Napa Platter <i>(Imported Brie, Cheddar, Swiss, Provolone, Salami, Mortadella & Capicola, Kalamata Olives and our homemade Olives Tapenade served with Crackers)</i> <br><br>
-
-   <h3> GORUMET PERSONAL PIZZAS </h3>
-   <p class="alignleftt">
-    Hummus Pizza <i> (A Living Room Original, with Hummus, Pesto, Artichoke Hearts and Onions with Feta and Fresh Mozzarella)</i><br><br>
-    Pesto Chicken Pizza <i>(Chicken Breast, Homemade Pesto, Onions and Fresh Mozzarella)</i><br><br>
-    Pepperoni Pizza<br><br>
-    Cheese Pizza 
-
-
-
-  </p>
- <p class="alignrightt"></p>
+      <p class="alignleftt">
+   Hummus <br>
+   Baba Ghanooj <br>
+   Lebnah<br>
+   Dolma <br>
+   Combo Platter<br>
+   Tabouli<br>
+   Falafel <br>
+   Lebnah & Zaatar <br>
+   Beef Shawarma<br>
+   Hot Wings <br>
+   Chicken Strips
+</p>
+<p class="alignright">
+     Shawarma Beef Nachos<br>
+   Chips & Salsa <br>
+   Brie and Fruit Plate<br>
+   Olive Tapenade <br>
+   Cheese Platter<br>
+   Napa Platter <br>
+   Hummus Pizza <br>
+  Pesto Chicken Pizza <br>
+  Pepperoni Pizza<br>
+  Cheese Pizza 
+</p>
 </div>
 <div style="clear: both;"></div>
-
 </div>
 
 
   <div id="entrees" class="tab-pane fade" data-toggle="tab">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
+       <h3> <i> Served with Salad or Soup</i></h3>
+  <p class="alignleftt">
+    Quiche Lorraine <br>
+    Spinach Quiche <br>
+    Chicken Pie<br>
+    Cheese Ravioli <br>
+    Turkey Lasagna <br>
+    Pesto Tortellini<br>
+    Chicken Burrito</p>
+    <p class="alighnright">
+      Veggie Burrito<br>
+      Turkey & Cheese Croissant<br>
+      Spinach & Cheese Croissant<br>
+      Beef Shawerma Plate<br>
+      Beef Kabob Plate<br>
+      Greek Beef Gyro Plate<br>
+      Greek Chicken Gyro Plate
+    </p>
   </div>
+
+
+
     <div id="salads" class="tab-pane fade" data-toggle="tab">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
+        <h3> <i> Served with Homemade Multi-Grain Bread, Butter & Fresh Fruit</i></h3>
+  <p class="alignleftt">
+    Greek<br>
+    Fatoosh <br>
+    Chicken Apple Pecan<br>
+    Oriental Chicken<br>
+    Russian chicken Grapes & Pecan<br>
+    Italian Chicken Curry & Pecan<br>
+    Strawberry Spinach
+  </p> 
+    <p class="alignrightt">
+      Falafel-Fatoosh<br>
+      Smoked Salmon<br>
+      Tuna<br>
+      Caesar<br>
+      Warm Spinach<br>
+      House<br>
+    </p>
   </div>
+  <div id="sandwiches" class="tab-pane fade" data-toggle="tab">
+<h3> Sandwiches</h3>
+<h3> <i> Your choice of Bread & Cheese <br>
+  Served with Chips and Pickles</i></h3>
+   <p class="alignleftt">
+      Turkey Club<br>
+    California Turkey<br>
+    B.L.T.<br>
+    Buffalo Spicy Chicken<br>
+    Sicilian Muffuleta<br>
+    Itialian <br>
+    Spicy Italian
+
+   <p class="alignrightt">
+Veggie Melt<br>
+  Fresh Veggie<br>
+  Tuna/Tuna Melt<br>
+  Beef Shawarma<br>
+  Baghdad Beef Kabob<br>
+  Greek Beef Gyro<br>
+  Greek Chicken Gyro<br>
+  Russian Chicken Salad</p>
+<br><br><br><br><br><br><br><br><br><br>
+  <h3> Wraps</h3>
+  <h3> <i> Served with Chips</i></h3>
+  <p class="alignleftt">
+    Falafel<br>
+    Kabob<br>
+    King Kabob<br>
+    Spicy Buffalo Chicken<br>
+    Spicy Pastrami Pesto<br>
+  </p>
+  <p class="alignrightt">
+    Hummus Veggie <br>
+    Caesar Chicken<br>
+    Chicken<br>
+    Veggie<br>
+  </p>
+  <br><br><br><br><br><br>
+  <h3> Paninis</h3>
+ <h3> <i> Your choice of Bread & Cheese <br>
+  Served with Chips and Pickles</i></h3>
+  <p class="alignleftt">
+    Fresh Mozzarella<br>
+    Pesto Chicken<br>
+    Chicken Ranch<br>
+    Chicken Italiano
+  </p>
+  <p class="alignrightt">
+    Chicken Club<br>
+    Ruben<br>
+    Pastrami<br>
+  </p>
+
 </div>
+
+</div>
+</div>
+
+</article>
 
 <!-- end menu1 -->
 
@@ -410,29 +505,234 @@ Smoothies (Acai, Banana, Strawberry, Mango and Berry)
 
 
 
-
-
-
-
-
-
-
 <!-- gallery -->
-<article id="gallery">
-   <h2 style="font-family:Fjalla One">GALLERY<div id="rectangle"> </h2>
+<article id="gallery"> 
+   <h2>GALLERY<div id="rectangle"> </div></h2>
+ 
+    <div id="containerrr">
+
+    <div class="box-item bigger"> 
+    <img src="fatguy.jpg" class="box-item bigger"></div>
+
+    <div class="box-item bigger">
+    <img src="fatguy.jpg" class="box-item bigger"></div>
+
+    <div class="box-item bigger">
+    <img src="fatguy.jpg" class="box-item bigger"></div>
+
+    <div class="box-item">
+    <img src="fatguy.jpg" class="box-item"></div>
+
+    <div class="box-item bigger">
+    <img src="fatguy.jpg" class="box-item bigger"></div>
+
+    <div class="box-item">
+    <img src="fatguy.jpg" class="box-item"></div>
+
+    <div class="box-item">
+    <img src="fatguy.jpg" class="box-item"></div>
+
+    <div class="box-item smaller">
+    <img src="fatguy.jpg" class="box-item smaller"></div>
+
+    <div class="box-item">
+    <img src="fatguy.jpg" class="box-item"></div>
+
+    <div class="box-item bigger">
+    <img src="fatguy.jpg" class="box-item bigger"></div>
+
+    <div class="box-item bigger end">
+    <img src="fatguy.jpg" class="box-item bigger end"></div>
+
+    <div class="box-item bigger">
+    <img src="fatguy.jpg" class="box-item bigger"></div>
+
+
+<!-- SnapWidget -->
+<iframe src="http://snapwidget.com/in/?u=ZGVzaWduanRifGlufDE1NXwzfDN8fG5vfDIuNXxub25lfG9uU3RhcnR8eWVzfG5v&ve=260216" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:471px; height:471px"></iframe>
+
+
+
+
+
+
+
+</div>
+
+</article>
+
+<!--  BETTER SAID;   <div id="containerrr">
+    <div class="box-item bigger">A</div>
+    <div class="box-item bigger">B</div>
+    <div class="box-item bigger">C</div>
+    <div class="box-item">D</div>
+    <div class="box-item bigger">E</div>
+    <div class="box-item">F</div>
+    <div class="box-item">G</div>
+    <div class="box-item smaller">H</div>
+    <div class="box-item">I</div>
+    <div class="box-item bigger">J</div>
+    <div class="box-item bigger end">K</div>
+    <div class="box-item bigger">L</div>
+</div>
+ -->
+
+
+
+
+
 <!-- end gallery -->
 
 <!-- hookah -->
+<br><br><br><br><br><br><br><br><br><br>
 <article id="hookah">
- <h2 style="font-family:Fjalla One">HOOKAH<div id="rectangle"> </h2>
+ <h2 style="font-family:Fjalla One">HOOKAH<div id="rectangle"></div></h2>
  <img src="hookahdecoy.jpg" class="titleimg">
- Hookah is just as cancerous as cigarettes. You think you are cool for smoking it but you will die just like the rest of them.
+<div class="container">
+  <div class="center">
+    <ul class="nav nav-tabs centered">
+  <li><a data-toggle="tab" href="#starbuzz">STARBUZZ</a></li>
+  <li><a data-toggle="tab" href="#alfakher">AL FAKHER</a></li>
+  <li><a data-toggle="tab" href="#cigars">CIGARS</a></li>
+</ul>
+</div>
+<div class="tab-content">
+  <div id="starbuzz" class="tab-pane fade">
+  <div id="infotext">
+
+  <p class="alignleftt">
+Code 69<br>
+Apple<br>
+Apple Cinnamon<br>
+Apple Martini<br>
+Black Berry<br>
+Black Grape<br>
+Blue Berry<br>
+Blue Berry Grape<br>
+Blue Mist<br>
+Bubble Gum<br>
+Cantaloupe<br>
+Chocolate Mint<br>
+Citrus Mint<br>
+Citrus Mist<br>
+Coconut<br>
+Cosmpolitan<br>
+Flower Power<br>
+Fruit Sensation<br>
+Fuzzy Lemonade<br>
+Fuzzy Navel<br>
+Guava<br>
+Honey Berry<br>
+Kiwi Strawberry<br>
+Lemon Mint<br>
+Lemon Tea<br>
+Mellon Dew<br>
+Mango<br>
+Margarita<br>
+    </p>
+    <p class="alignrightt">
+
+Marlet<br>
+Mojito<br>
+Passion Mojito<br>
+Passion Kiss <br>
+Peaches & Cream<br>
+Pina Colada<br>
+Pineapple<br>
+Pink<br>
+Pirates Cave<br>
+Pom Berry<br>
+Rasberry<br>
+Rose<br>
+Royal Grape<br>
+Sour Apple<br>
+Spearmint<br>
+Strawberry<br>
+Strawberry Daiquri<br>
+SB Margarita<br>
+Sweer Melon<br>
+Tangerine<br>
+Tropical Fruit<br>
+Watermelon<br>
+White Peach<br>
+Wild Berry<br>
+Wild Berry Mint<br>
+Wild Mint<br>
+Sex on the Beach
+</p>
+
+</div>
+<div style="clear: both;"></div>
+  </div>
+
+  <div id="alfakher" class="tab-pane fade">
+  <div id="infotext">
+
+  <p class="alignleftbfast">
+Apple<br>
+Apricot<br>
+Banana<br>
+Berry<br>
+Bubble Gum <br>
+Cappuccino<br>
+Cherry<br>
+Cinnamon<br>
+Cocktail<br>
+Coconut<br>
+Double Apple<br>
+Grape<br>
+Grape Mint<br>
+Grenadine<br>
+    </p>
+    <p class="alignrightbfast">
+Guava<br>
+Honey<br>
+Lemon<br>
+Mango<br>
+Mint<br>
+Orange<br>
+Peach<br>
+Pineapple<br>
+Plum<br>
+Strawberry<br>
+Vanilla<br>
+Watermelon
+</p>
+
+</div>
+<div style="clear: both;"></div>
+  </div>
+
+  <div id="cigars" class="tab-pane fade">
+  <div id="infotext">
+
+  <p class="alignleftbfast">
+
+    </p>
+    <p class="alignrightbfast">
+
+</p>
+
+</div>
+<div style="clear: both;"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</article>
 <!-- end hookah -->
 
 <!-- events/specials -->
 <article id="events">
-   <h2 style="font-family:Fjalla One">EVENTS<div id="rectangle"> </h2>
-   <h4> HAPPY HOURS <BR>4PM-7PM<BR> EVERYDAY
+   <h2 style="font-family:Fjalla One">EVENTS<div id="rectangle"></div> </h2>
+   <h4> HAPPY HOURS <BR>4PM-7PM<BR> EVERYDAY</h4>
  
 
 
@@ -442,42 +742,46 @@ Smoothies (Acai, Banana, Strawberry, Mango and Berry)
 
 
 
-
+</article>
 <!-- end menu -->
 <!-- end events/specials -->
 
 <!-- catering -->
 <article id="catering">
-   <h2 style="font-family:Fjalla One">CATERING<div id="rectangle"> </h2>
+   <h2 style="font-family:Fjalla One">CATERING<div id="rectangle"></div> </h2>
+ The Living Room offers fine dining to wholesale services, business catering, parties, and wedding celebrations. For more information, contact The Living Room location nearest you.
    <br>
    <button type="button" class="cateringbutt">FILL OUT FORM</button><br><br>
    Fill out this Google Form and we'll be in touch!
+ </article>
 <!-- end catering -->
 
 <!-- about -->
 <article id="about">
-   <h2 style="font-family:Fjalla One">ABOUT<div id="rectangle"> </h2>
+   <h2 style="font-family:Fjalla One">ABOUT<div id="rectangle"> </div></h2>
    <img src="livingroompeople.jpg" class="titleimg"><br><br>
-   We are a bunch of losers and I stole this company HAHAHAHAH
+ With (5) locations to serve you, The Living Coffeehouse is one of the finest coffeehouse and bistro in the San Diego Area. With the backing of culinary masters from around the world, only The Living Room can offer such a wonderful array of gourmet meals, pastries, and drinks.
+<br><br>
+Since it's conception in 1991, the Living Room has grown from its original location in the San Diego State University area, to a total of 5 Cafe's, including also those in La Jolla, Point Loma, and Historic Old Town San Diego and our newest addition and concept the Living Room Lounge in La Jolla.
    <br>
    <br>
    <br>
-   <br>
-   <br>
-   <br>
+
+   </article>
 <!-- end about -->
 <footer>
-  <div id="rectanglee">
+
     <br>
 <div id="infotext">
+  <div class="footerimg">
   <p class="alignleft"> (858)459-1187<br> Sunday-Friday 7AM-1AM<br> Saturday:7AM-2AM</p>
+ 
   <p class="alignright">Living Room <br> La Jolla,CA <br>JMS Design </p>
 </div>
 <div style="clear: both;"></div>
-<footer>
-</body>
+</div>
+</footer>
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
 </html>
