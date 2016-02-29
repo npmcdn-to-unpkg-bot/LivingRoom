@@ -93,13 +93,13 @@
           </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a style="font-family:Fjalla One" href="#info">INFO</a></li>
-            <li><a style="font-family:Fjalla One" href="#menu">MENU</a></li>
-            <li><a style="font-family:Fjalla One" href="#gallery">GALLERY</a></li>
-            <li><a style="font-family:Fjalla One" href="#hookah">HOOKAH</a></li>
-            <li><a style="font-family:Fjalla One" href="#events">EVENTS/SPECIALS</a></li>
-            <li><a style="font-family:Fjalla One" href="#catering">CATERING</a></li>
-            <li><a style="font-family:Fjalla One" href="#about">ABOUT</a></li>
+            <li class="active"><a style="font-family:Fjalla One" href="#info" data-toggle="collapse" data-target=".navbar-collapse"> INFO</a></li>
+            <li><a href="#menu" style="font-family:Fjalla One" data-toggle="collapse" data-target=".navbar-collapse">MENU</a></li>
+            <li><a style="font-family:Fjalla One" href="#gallery" data-toggle="collapse" data-target=".navbar-collapse">GALLERY</a></li>
+            <li><a style="font-family:Fjalla One" href="#hookah" data-toggle="collapse" data-target=".navbar-collapse">HOOKAH</a></li>
+            <li><a style="font-family:Fjalla One" href="#events" data-toggle="collapse" data-target=".navbar-collapse">EVENTS/SPECIALS</a></li>
+            <li><a style="font-family:Fjalla One" href="#catering" data-toggle="collapse" data-target=".navbar-collapse">CATERING</a></li>
+            <li><a style="font-family:Fjalla One" href="#about" data-toggle="collapse" data-target=".navbar-collapse">ABOUT</a></li>
           </ul>
       </div>
     </div>
@@ -108,23 +108,26 @@
 </div>
 
 
-
+<!-- <li><a href="#products" class="hidden-xs">Products</a></li>
+<li><a href="#products" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Products</a></li> -->
 
 
 
 
 <!-- menu1 -->
-      <h2 style="font-family:Fjalla One">DRINK<div id="rectangle"> </div></h2>
-<article id="menu">
+<div > </div>
+      <h2 style="font-family:Fjalla One" href="#menu">DRINK<div id="rectangle" > </div></h2>
+<article id="menu" >
 
   <div class="container">
-    <ul class="nav nav-tabs centered" href="#menu">
+    <ul class="nav nav-tabs centered">
  <!--  <li class="active"> -->
     <li><a data-toggle="tab" href="#coffee">COFFEE</a></li>
   <li><a data-toggle="tab" href="#iced">ICED</a></li>
   <li><a data-toggle="tab" href="#tea">TEA</a></li>
   <li><a data-toggle="tab" href="#mocha">MOCHA</a></li>
   <li><a data-toggle="tab" href="#frappe">FRAPPE</a></li>
+  <li><a data-toggle="tab" href="#alcohol">ALCOHOL</a></li>
 </ul>
 </div>
 
@@ -275,6 +278,54 @@ Smoothies (Acai, Mango, etc.)
 </div>
 <div style="clear: both;"></div>
 </div>
+
+  <div id="alcohol" class="tab-pane fade" data-toggle="tab">
+    <div id="infotext">
+      <h4 class="aligncenter">BEER</h4>
+  <p class="alignleftt">
+Heineken<br>
+New Castle <br>
+Fat Tire<br>
+Amstel Light<br>
+Peroni<br>
+Blue Moon<br>
+Guiness<br>
+Red Stripe<br>
+Stella Artois<br>
+Red Trolley<br>
+Stone IPA<br>
+
+
+</p>
+
+<p class="alignrightttt">
+Dos Equis<br>
+Corona Extra<br>
+Corona Light<br>
+Pacifico<br>
+Budweiser<br>
+Bud Light<br>
+Coors Light<br>
+Miller Light<br>
+Almaza<br>
+Ballast Point
+  </p>
+</div>
+<div style="clear: both;"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 </div>
 </article>
@@ -505,9 +556,12 @@ Veggie Melt<br>
 
 
 
+
+
+
 <!-- gallery -->
 <article id="gallery"> 
-   <h2>GALLERY<div id="rectangle"> </div></h2>
+   <h2 style="font-family:Fjalla One">GALLERY<div id="rectangle"> </div></h2>
  
     <div id="containerrr">
 
@@ -547,18 +601,7 @@ Veggie Melt<br>
     <div class="box-item bigger">
     <img src="fatguy.jpg" class="box-item bigger"></div>
 
-
-<!-- SnapWidget -->
-<iframe src="http://snapwidget.com/in/?u=ZGVzaWduanRifGlufDE1NXwzfDN8fG5vfDIuNXxub25lfG9uU3RhcnR8eWVzfG5v&ve=260216" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:471px; height:471px"></iframe>
-
-
-
-
-
-
-
 </div>
-
 </article>
 
 <!--  BETTER SAID;   <div id="containerrr">
@@ -576,15 +619,14 @@ Veggie Melt<br>
     <div class="box-item bigger">L</div>
 </div>
  -->
-
-
-
-
-
 <!-- end gallery -->
 
+
+
+
+
 <!-- hookah -->
-<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 <article id="hookah">
  <h2 style="font-family:Fjalla One">HOOKAH<div id="rectangle"></div></h2>
  <img src="hookahdecoy.jpg" class="titleimg">
@@ -749,10 +791,10 @@ Watermelon
 <!-- catering -->
 <article id="catering">
    <h2 style="font-family:Fjalla One">CATERING<div id="rectangle"></div> </h2>
- The Living Room offers fine dining to wholesale services, business catering, parties, and wedding celebrations. For more information, contact The Living Room location nearest you.
+ <div class="abouttext">The Living Room offers fine dining to wholesale services, business catering, parties, and wedding celebrations. For more information, contact The Living Room location nearest you.
    <br>
    <button type="button" class="cateringbutt">FILL OUT FORM</button><br><br>
-   Fill out this Google Form and we'll be in touch!
+   Fill out this Google Form and we'll be in touch!</div>
  </article>
 <!-- end catering -->
 
@@ -760,9 +802,9 @@ Watermelon
 <article id="about">
    <h2 style="font-family:Fjalla One">ABOUT<div id="rectangle"> </div></h2>
    <img src="livingroompeople.jpg" class="titleimg"><br><br>
- With (5) locations to serve you, The Living Coffeehouse is one of the finest coffeehouse and bistro in the San Diego Area. With the backing of culinary masters from around the world, only The Living Room can offer such a wonderful array of gourmet meals, pastries, and drinks.
+ <div class= "abouttext">With (5) locations to serve you, The Living Coffeehouse is one of the finest coffeehouse and bistro in the San Diego Area. With the backing of culinary masters from around the world, only The Living Room can offer such a wonderful array of gourmet meals, pastries, and drinks.
 <br><br>
-Since it's conception in 1991, the Living Room has grown from its original location in the San Diego State University area, to a total of 5 Cafe's, including also those in La Jolla, Point Loma, and Historic Old Town San Diego and our newest addition and concept the Living Room Lounge in La Jolla.
+Since it's conception in 1991, the Living Room has grown from its original location in the San Diego State University area, to a total of 5 Cafe's, including also those in La Jolla, Point Loma, and Historic Old Town San Diego and our newest addition and concept the Living Room Lounge in La Jolla.</div>
    <br>
    <br>
    <br>
